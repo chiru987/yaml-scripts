@@ -1,0 +1,15 @@
+---
+ - name: install multiple pkgs
+   hosts: one
+   tasks:
+    - name: packags install using loop module
+      when: ansible_distribution == "redhat"
+      yum:
+       name: "{{ item }}"
+       state: absent
+      loop:
+        - finger
+        - tigervnc-server
+        - vsftpd
+        - ntp
+...
