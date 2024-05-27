@@ -1,0 +1,14 @@
+---
+ - name : case1
+   hosts: vlab
+   vars:
+     os: "linux"
+     cloud: "aws"
+     tools: "devops"
+   tasks:
+     - name: desiplay above msg using vars
+       debug:
+         var: os
+     - debug:
+         msg: "i love {{os}}"
+...

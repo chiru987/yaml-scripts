@@ -1,0 +1,7 @@
+---
+ - name : case1
+   hosts: vlab
+   tasks:
+     - name: desiplay below msg
+       debug: msg="welcome to varains"
+...

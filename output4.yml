@@ -1,0 +1,9 @@
+---
+ - hosts: vlab
+   tasks:
+      - debug:
+         msg:
+         - "welcome to varainso"
+         - "welcome to naeshins"
+         - "welcome to naniins"
+...

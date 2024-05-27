@@ -1,0 +1,10 @@
+---
+ - hosts: vlab
+   tasks:
+      - debug:
+          msg:
+           my hostname is  {{ansible_hostname}}
+           my ip adress is {{ansible_default_ipv4.address}}
+           my gateway adress is  {{ansible_default_ipv4.gateway}}
+           my fqdn adress is  {{ansible_facts ['fqdn']}}
+...

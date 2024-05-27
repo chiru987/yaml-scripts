@@ -1,0 +1,8 @@
+---
+ - hosts: vlab1
+   tasks:
+     - shell: uptime;uname -r; df -h /var
+       register: chiru_result
+
+     - debug:
+        var: chiru_result.stdout_lines

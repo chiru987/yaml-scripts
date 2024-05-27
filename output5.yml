@@ -1,0 +1,6 @@
+---
+ - hosts: vlab
+   tasks:
+      - debug:
+         msg: "my hostname is : {{ansible_hostname}}"
+...

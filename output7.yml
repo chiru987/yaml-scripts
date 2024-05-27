@@ -1,0 +1,12 @@
+---
+ - hosts: vlab
+   tasks:
+      - debug:
+         msg: "my hostname is : {{ansible_hostname}}"
+      - debug:
+         msg: "my ip adress is: {{ansible_default_ipv4.address}}"
+      - debug:
+         msg: "my gateway adress is : {{ansible_default_ipv4.gateway}}"
+      - debug:
+         msg: "my server date : {{ansible_date_time.date}}"
+...

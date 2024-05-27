@@ -1,0 +1,6 @@
+---
+ - hosts: vlab
+   tasks:
+      - debug:
+         var: ansible_hostname
+...
